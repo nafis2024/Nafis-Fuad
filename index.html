@@ -3,44 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Decorative Lines -->
-    <div class="horizontal-line top-left"></div>
-    <div class="horizontal-line bottom-right"></div>
+    <!-- Background Elements -->
+    <div class="gradient-blob blob-1"></div>
+    <div class="gradient-blob blob-2"></div>
 
     <!-- Navigation -->
-    <nav class="desktop-nav">
+    <nav class="main-nav">
+        <div class="nav-links">
+            <a href="#skills">Skills</a>
+            <a href="#work">Work</a>
+            <a href="#education">Education</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <button class="hamburger">☰</button>
+    <nav class="mobile-menu">
         <a href="#skills">Skills</a>
-        <div class="separator"></div>
-        <a href="#experiences">Experiences</a>
-        <div class="separator"></div>
-        <a href="#academics">Academics</a>
-        <div class="separator"></div>
-        <a href="#hobbies">Hobbies</a>
-        <div class="separator"></div>
+        <a href="#work">Work</a>
+        <a href="#education">Education</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Mobile Hamburger -->
-    <button class="hamburger-btn">☰</button>
-    <nav class="mobile-nav">
-        <a href="#skills">Skills</a>
-        <div class="separator"></div>
-        <a href="#experiences">Experiences</a>
-        <!-- ... other links ... -->
-    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="hero-title">Portfolio of Mohammad Nafis Fuad</h1>
+        <h2 class="h2-title">A junior college student</h2>
+        <!--
+        <h3 class="h3-subtitle">Dhaka, Bangladesh</h3>
+        -->
+        <p class="decorative-text">Computers and Machines fascinate me. 
+            <br> I like to learn about them. 
+            <br>The code for this webpage was written entirely using Ai tools.</p>
+    </section>
 
-    <!-- Centered Title -->
-    <h1 class="title">Portfolio</h1>
 
-    <!-- Sections (Placeholders) -->
-    <section id="skills"></section>
-    <section id="experiences"></section>
-    <!-- ... -->
+    <hr class="section-divider">
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-heading">My Toolkit</h2>
+        <div class="skills-grid">
+            <article class="skill-card js">
+                <h3>JavaScript</h3>
+                <div class="skill-level intermediate">🚀 Intermediate</div>
+                <p class="skill-description">
+                    Building interactive web experiences with modern ES6+ features and APIs
+                </p>
+            </article>
+
+            <article class="skill-card ts">
+                <h3>TypeScript</h3>
+                <div class="skill-level learning">📚 Learning</div>
+                <p class="skill-description">
+                    Implementing type safety in complex applications
+                </p>
+            </article>
+
+            <article class="skill-card html">
+                <h3>HTML5</h3>
+                <div class="skill-level advanced">🔥 Advanced</div>
+                <p class="skill-description">
+                    Semantic markup and accessibility enthusiast
+                </p>
+            </article>
+
+            <article class="skill-card css">
+                <h3>CSS3</h3>
+                <div class="skill-level advanced">🎨 Advanced</div>
+                <p class="skill-description">
+                    Creative layouts with Grid/Flexbox and animations
+                </p>
+            </article>
+
+            <article class="skill-card react">
+                <h3>React</h3>
+                <div class="skill-level intermediate">⚛️ Intermediate</div>
+                <p class="skill-description">
+                    Building component-based architectures
+                </p>
+            </article>
+
+            <article class="skill-card os">
+                <h3>OS Mastery</h3>
+                <div class="skill-level expert">💻 Expert</div>
+                <p class="skill-description">
+                    Windows/Linux power user with CLI expertise
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Other Sections -->
+    <section id="work" class="section"></section>
+    <section id="education" class="section"></section>
+    <section id="about" class="section"></section>
+    <section id="contact" class="section"></section>
 
     <script src="script.js"></script>
 </body>
